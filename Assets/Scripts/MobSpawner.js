@@ -6,7 +6,7 @@ var spawnPoints : Transform[];
 
 function Start () {
 	InvokeRepeating("Spawn", spawnTime, spawnTime);
-	enemy.transform.localScale += new Vector3(50.0F, 50.0F, 50.0F);
+	enemy.transform.localScale = new Vector3(50.0F, 50.0F, 50.0F);
 }
 
 function Update () {
