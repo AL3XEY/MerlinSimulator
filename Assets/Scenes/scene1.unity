@@ -117,8 +117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eef1d8c945ad6849a1561a0e25c631b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 100078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
+  spell: {fileID: 121802, guid: 8f18e1d8c46c51f429429815455062fc, type: 2}
   player: {fileID: 197642107}
+  spawn: {fileID: 1046191804}
+  enemy: {fileID: 100078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
 --- !u!4 &195807660
 Transform:
   m_ObjectHideFlags: 0
@@ -277,7 +279,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 203646789}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76f14a5a2d5ed6e4ca4feef3680b2d11, type: 3}
   m_Name: 
