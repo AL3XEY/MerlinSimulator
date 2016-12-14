@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ennemy
   - spell
+  - New Tag
+  - weapon
+  - Fire
+  - tagger
   layers:
   - Default
   - TransparentFX

@@ -282,6 +282,7 @@ namespace DigitalRuby.LightningBolt
             lineRenderer = GetComponent<LineRenderer>();
             lineRenderer.SetVertexCount(0);
             UpdateFromMaterialChange();
+			EndObject = GameObject.Find ("SpellCastingSystem").GetComponent<SpellCasting>().currentEnnemy;
         }
 
         private void Update()

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class basicIA : MonoBehaviour {
 
-
+    public int ID;
 	public Transform player;
 	public Animator anim;
 	private bool isWalking, isAttacking, isRunning,isDead;
@@ -34,7 +34,12 @@ public class basicIA : MonoBehaviour {
 		meleeAttackRange = 7;
 		dangerZone = 20;
 		isWalking = isAttacking = isRunning = false;
-	}
+
+
+        //il faut recuperer son ID
+        GameObject.FindGameObjectWithTag("Player").GetComponent<EnnemiesList>().AddEnnemy(gameObject);
+
+    }
 
 	/*private void setTriggers(string state){
 		foreach (AnimatorControllerParameter param in anim.parameters) {
@@ -49,6 +54,9 @@ public class basicIA : MonoBehaviour {
 	}*/
 	// Update is called once per frame
 	void Update () {
+
+       
+        
 		if (isDead == false && health <= 0) {
 			isDead = true;
 			anim.SetTrigger ("deathTrigger");
